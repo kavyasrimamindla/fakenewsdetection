@@ -1,0 +1,15 @@
+ <!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Result</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container result-card">
+    <h2>Prediction Result</h2>
+    <h3 class="result {{ prediction|lower }}">{{ prediction }}</h3>
+    <a href="{{ url_for('dashboard') }}">← Back</a>
+  </div>
+</body>
+</html>
